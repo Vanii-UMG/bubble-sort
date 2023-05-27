@@ -19,9 +19,8 @@ public class App {
 
         // Ordenamiento de burbuja
         for (int j = 1; j < vector.length; j++) {
-            boolean flag = false;
+            boolean flag = true;
             for (int i = 1; i < vector.length; i++) {
-                flag = true;
                 if (vector[i - 1] < vector[i]) {
                     flag = false;
                     aux = vector[i - 1];
