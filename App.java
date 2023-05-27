@@ -19,14 +19,17 @@ public class App {
 
         // Ordenamiento de burbuja
         for (int j = 1; j < vector.length; j++) {
+            boolean flag = false;
             for (int i = 1; i < vector.length; i++) {
-
+                flag = true;
                 if (vector[i - 1] < vector[i]) {
+                    flag = false;
                     aux = vector[i - 1];
                     vector[i - 1] = vector[i];
                     vector[i] = aux;
                 }
             }
+            if(flag) break;
         }
 
         // Mostrar vector ordenado
